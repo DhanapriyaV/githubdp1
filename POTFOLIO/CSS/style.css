@@ -1,0 +1,313 @@
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; 
+    left: 0;
+    background-color:rgb(153, 101, 5); 
+    overflow-x: hidden; 
+    padding-top: 120px;
+    transition: 0.5s; 
+    border: 1px rgba(255,255,255,0.18);
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.37);
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 20px 20px 20px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+    
+    
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+section{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+.mainbox1{
+    width: 900px;
+    height: 450px;
+    margin-left: 80px;
+    border-radius: 100px;
+    display: flex;
+    margin-top: 10px;
+    border: 1px rgba(17, 17, 17, 0.18);
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.37);
+}
+.innerbox1{
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    width:600px;
+    margin-top: 80px;
+    margin-left: 80px; 
+}
+.innerbox2{
+   
+    width: 500px;
+    min-height: 450px;
+    background-color:rgb(153, 101, 5);
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: 1px rgba(255,255,255,0.18);
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.37);
+}
+* {
+    box-sizing: border-box;
+  }
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(153, 101, 5);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    width: 70%;
+
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    right:20%;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+    
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 10px 10px;
+    background-color:rgb(158, 108, 16);
+    position: relative;
+    border-radius: 6px;
+    
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+
+    .timeline::after {
+      left: 31px;
+    }
+  
+    .left::after, .right::after {
+      left: 15px;
+    }
+  
+    .right {
+      left: 0%;
+    }
+  }
+  
+.objective{
+    display: flex;
+    height:300px;
+    width: 40%;
+    margin-left: 200px;
+    margin-top: 80px;
+   
+}
+.objective>h3{
+    text-align: justify;
+    text-indent: 20%;
+    padding: 60px;
+    flex-wrap: wrap;
+
+}
+.info{
+    height: 300px;
+    width: 30%;
+    margin-left: 10px;
+    margin-top: 90px;
+    flex-wrap: wrap;
+    
+}
+
+
+.edu1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+}
+.edu1>:hover{
+    transform: scale(1.1);
+    z-index:2;
+}
+.edu1>div{
+background-color: white;
+height: 280px;
+width: 300px;
+margin: 10px;
+border-radius: 50px;
+border:rgb(153, 101, 5);
+box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.37);
+}
+.edu1>div>h3{
+    margin-left: 40px;
+}
+
+#skills{
+    background-color: rgb(153, 101, 5);
+}
+#proj00{
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 600px;
+    
+}
+#proj11{
+   display: flex;
+   margin-bottom: 380px;
+   margin-left: 80px;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.pro{
+    height: 240px;
+    width: 300px;
+    margin: 10px;
+    background-color:white;
+    border: 1px rgba(255,255,255,0.18);
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.37);
+    border: 2px black solid;
+    
+    
+}
+
+.pro>.div3{
+    height: 100%;
+    width:100%;
+    background-image: url(../HTML/media/zomtohome.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    
+
+}
+#proj22{
+    display: flex;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 300px;
+}
+.pro>.div5{
+    height: 100%;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    
+
+}
+
+#project{
+    min-height: 130vh;
+    
+}
+
+#photo{
+    height: 250px;
+    width: 250px;
+    background-color:white ;
+    margin-left: 50px;
+    margin-top: 90px;
+    border-radius: 150px;
+}
+.pro:hover{
+    transform: scale(1.1);
+    z-index:2;
+    
+}
+#myphoto:hover{
+    transform: scale(1.3);
+    z-index:2;
+}
+.container0{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    background-color: rgb(158, 108, 16);
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    
+}
